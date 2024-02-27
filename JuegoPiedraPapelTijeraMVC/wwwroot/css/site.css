@@ -1,0 +1,99 @@
+.PI_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: lightcoral;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.PI_container div {
+    background-color: lightcoral;
+    width: 100%;
+    display: flex;
+}
+
+.PI_title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.PI_button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 30%;
+    height: 50px;
+}
+
+.PI_button:hover {
+    background-color: palevioletred;
+}
+
+
+.PJ_playerPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+
+
+.PJ_playerPanel p {
+    font-size: 120px;
+}
+
+.PJ_button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.PJ_button:hover {
+    background-color: palevioletred;
+}
+
+.PG_title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.PG_button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 30%;
+    height: 50px;
+}
+
+.PG_button:hover {
+    background-color: palevioletred;
+}
+
+.PI_container div:has(.PG_button) {
+    display: block;
+    text-align: center;
+}
